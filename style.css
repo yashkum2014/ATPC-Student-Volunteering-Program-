@@ -1,0 +1,188 @@
+/* Reset default margins, paddings, and set global box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body styling with background image and centering content */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(amity.jpeg) no-repeat center center/cover;
+}
+
+/* Heading styling */
+.heading {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Logo styling */
+.logo {
+    position: absolute;
+    top: 80px;
+    left: 40px;
+    width: 167px;
+    height: 41px;
+}
+
+/* Container styling */
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.4);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* QR image styling */
+.card img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+/* Button container styling */
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Button styling */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    transition: 0s ease;
+}
+
+/* Social media button colors */
+.linkedin {
+    background-color: #0077b5;
+}
+
+.instagram {
+    background-color: #e4405f;
+}
+
+.facebook {
+    background-color: #1877f2;
+}
+
+/* Button hover effect */
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* Notification section styling */
+.notification {
+    margin-top: 20px;
+    padding: 15px;
+    background: #ffeb3b;
+    color: #333;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Footer styling */
+.footer {
+    width: 100%;
+    padding: 0px;
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255,0.4);
+    text-align: center;
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+@media (max-width: 1024px){
+    .heading{
+        font-size: 40px;
+        top:200px;
+    }
+    .container {
+        width: 100%;
+        max-width: 90%;
+        padding: 20px;
+    }
+    .btn {
+        width: 100%;
+        max-width: 200px;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
+
+/* Responsive adjustments for tablets and smaller screens */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        max-width: 90%;
+        padding: 20px;
+    }
+    .btn {
+        width: 100%;
+        max-width: 200px;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    .heading {
+        top:200px;
+        font-size: 30px;
+    }
+    .logo {
+        width: 167px;
+        height: 41px;
+    }
+}
+
+/* Responsive adjustments for mobile screens */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+    .btn {
+        width: 100%;
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    .card img {
+        max-width: 150px;
+    }
+    .notification {
+        font-size: 14px;
+    }
+    .heading {
+        top:120px;
+        font-size:20px;
+    }
+    .logo {
+        top:30px;
+        width: 80px;
+        height: 30px;
+    }
+}
